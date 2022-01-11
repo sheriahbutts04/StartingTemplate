@@ -15,9 +15,13 @@ def setMessage(message):
   my_message=message
   print(my_message)
 
+def my_function():
+  print("Todolist")
+
 @app.route('/', methods=['GET', 'POST'])
 def page_one():
   form = MessageForm()
+  my_function()
   if form.is_submitted():
     print("made it")
     setMessage(form.message.data)
@@ -31,8 +35,8 @@ def page_two():
 
 app.run(host='0.0.0.0', port=8080)
 
-@app.route('/', methods=['GET', 'POST'])
-def page_one():
+@app.route('/onetwo', methods=['GET', 'POST'])
+def page_one_two():
   form = MessageForm()
   if form.is_submitted():
     print("made it")
@@ -40,5 +44,6 @@ def page_one():
     return redirect('/display')
   return render_template('pageOne.html', form=form)
   
+app.run(host='0.0.0.0',port=8080)
 
- 
+
