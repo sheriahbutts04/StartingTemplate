@@ -12,7 +12,7 @@ app.config.from_object(Config)
 my_message = []
 def setMessage(message):
   global my_message
-  my_message=message
+  my_message.append(message)
   print(my_message)
 
 def my_function():
@@ -45,5 +45,4 @@ def page_one_two():
   return render_template('pageOne.html', form=form)
   
 app.run(host='0.0.0.0',port=8080)
-
 

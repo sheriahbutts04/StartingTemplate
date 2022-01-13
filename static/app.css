@@ -1,11 +1,14 @@
 h1 {
-  color: blueviolet;
+  color: rgb(0, 192, 250);
 }
 
 label {
-  color: cornflowerblue;
+  color: rgb(9, 231, 146);
 }
 
 p {
-  color: aquamarine;
+  color: rgb(253, 93, 1);
+}
+body {
+  background-color: rgb(174, 16, 248);
 }

@@ -5,5 +5,9 @@
 </head>
 <body>
   <h1>A message was left</h1>
-  <p>{{ my_message }}</p>
+ <ul>
+  {% for item in my_message %}
+  <li>{{ item }}</li>
+  {% endfor %}
+  </ul>
 </body>
