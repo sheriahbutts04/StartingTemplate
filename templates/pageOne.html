@@ -5,10 +5,11 @@
 </head>
 <body>
   <h1>Make Your List</h1>
-  <form action="" method="post" novalidate>
+  <form action="" method="post" novalidate> <h2>
     {{ form.csrf_token }}
     {{ form.message.label }}
     {{ form.message }}
     {{ form.submit() }}
+  </h2>
   </form>
 </body>
