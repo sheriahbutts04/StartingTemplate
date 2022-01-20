@@ -4,10 +4,18 @@
   <link rel="stylesheet" href="/static/app.css">
 </head>
 <body>
-  <h1>A message was left</h1>
+  <h1>School list</h1>
  <p2><ol>
-  {% for item in my_message %}
+  {% for item in my_school_list %}
   <li>{{ item }}</li>
   {% endfor %}
   </ol></p2>
+
+  <h1>Home list</h1>
+ <p2><ol>
+  {% for item in my_home_list %}
+  <li>{{ item }}</li>
+  {% endfor %}
+  </ol></p2>
+
 </body>

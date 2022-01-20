@@ -4,12 +4,19 @@
   <link rel="stylesheet" href="/static/app.css">
 </head>
 <body>
-  <h1>Make Your List</h1>
+  <h1>Make Your School List</h1>
   <form action="" method="post" novalidate> <h2>
-    {{ form.csrf_token }}
-    {{ form.message.label }}
-    {{ form.message }}
-    {{ form.submit() }}
+    {{ form1.csrf_token }}
+    {{ form1.message.label }}
+    {{ form1.message }}
+    {{ form1.submit() }}
+   
+ <h1>Make Your Home List</h1>
+  <form action="" method="post" novalidate> <h2>
+    {{ form2.csrf_token }}
+    {{ form2.message.label }}
+    {{ form2.message }}
+    {{ form2.submit() }}
   </h2>
   </form>
 </body>
