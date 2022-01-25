@@ -5,13 +5,10 @@
 </head>
 <body>
   <h1>Make Your School List</h1>
-  <form action="" method="post" novalidate> <h2>
+  <form action="" method="post" novalidate>
     {{ form1.csrf_token }}
     {{ form1.message.label }}
     {{ form1.message }}
     {{ form1.submit() }}
-   
- 
-  </h2>
   </form>
 </body>
