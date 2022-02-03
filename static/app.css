@@ -14,10 +14,9 @@ body {
   background-color: rgb(25, 25, 112);
 }
 
-p2 {
+li {
   white-space: nowrap;
   width: 200px;  
   color: rgb(255, 255, 255);
-  overflow: hidden;
   text-overflow: ellipsis;
 }
